@@ -7,3 +7,46 @@
     background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
  background-blend-mode: screen;
 }
+.image1-animation {
+    animation: moveUpDown 3s infinite alternate;
+}
+
+@keyframes moveUpDown {
+  0%{
+    transform: translate(-50px,0px);
+  }  
+  100%{
+    transform: translate(0px,-40px);
+  }
+}
+.image2{
+    background-image: url('https://assets.website-files.com/6399ec1545e218ece386c9b6/639ca955617149547d8b36c3_Vector%2023.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image2-animation {
+animation: moveUpdown 3s infinite alternate ;
+}
+@keyframes moveUpdown {
+    0%{
+        transform: translate(0px,-40px);
+      }  
+      100%{
+        transform: translate(-50px,0px);
+       
+      }
+}
+.image3-animation{
+    animation: moveupdown3 3s infinite alternate;
+}
+@keyframes moveupdown3 {
+    0%{
+        /* transform: translate(-10px,0px) ; */
+        transform: translateX(-40px);
+    }
+    100%{
+        /* transform: translate(0px,40px); */
+        transform: translateX(0px);
+    }
+}
