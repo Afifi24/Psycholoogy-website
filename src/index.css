@@ -19,12 +19,12 @@
     transform: translate(0px,-40px);
   }
 }
-.image2{
+/* .image2{
     background-image: url('https://assets.website-files.com/6399ec1545e218ece386c9b6/639ca955617149547d8b36c3_Vector%2023.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 .image2-animation {
 animation: moveUpdown 3s infinite alternate ;
 }
@@ -42,11 +42,10 @@ animation: moveUpdown 3s infinite alternate ;
 }
 @keyframes moveupdown3 {
     0%{
-        /* transform: translate(-10px,0px) ; */
+        
         transform: translateX(-40px);
     }
     100%{
-        /* transform: translate(0px,40px); */
         transform: translateX(0px);
     }
 }
