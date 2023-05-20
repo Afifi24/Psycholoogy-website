@@ -7,7 +7,8 @@ content: [
   theme: {
     extend: {
       fontFamily:{
-        'Kumbh':['Kumbh Sans']
+        'Kumbh':['Kumbh Sans'],
+        'Manrope':['Manrope']
       }
     },
   },

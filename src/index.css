@@ -19,12 +19,9 @@
     transform: translate(0px,-40px);
   }
 }
-/* .image2{
-    background-image: url('https://assets.website-files.com/6399ec1545e218ece386c9b6/639ca955617149547d8b36c3_Vector%2023.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
+.shaddow{
+  box-shadow: 0.5px 0.5px 30px rgba(0,0,0,0.1);
+}
 .image2-animation {
 animation: moveUpdown 3s infinite alternate ;
 }

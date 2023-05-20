@@ -137,7 +137,7 @@ const Header = () => {
                      </div>
 
                      <div className='mt-10 flex flex-col'>
-                            <div onMouseEnter={Showhide} onMouseLeave={Showhide} className='flex  flex-col gap-4'>
+                            <div onMouseEnter={Showhide} onMouseLeave={Showhide} className='flex  flex-col gap-3'>
                                 <div href='' className=' flex p-[10px] justify-between items-center cursor-pointer'  >
                                   
                                 <p>  Demos</p>
@@ -147,8 +147,14 @@ const Header = () => {
                                   </div>
                                 { show &&
                                     <div className='flex pl-6 flex-col gap-3'>
-                                    <a className='hover:text-red-500' href="">Home1</a>
-                                    <a className='hover:text-red-500' href="">Home2</a>
+                                     <div className='flex group items-center gap-2'>
+                                        <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
+                                        <a className='cursor-pointer hover:text-red-500 duration-200' href=""> home1</a>
+                                        </div>
+                                        <div className='flex group duration-200 items-center gap-2'>
+                                        <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
+                                        <a className='cursor-pointer hover:text-red-500 duration-200' href=""> home2</a>
+                                        </div>
                                 </div>}
                             </div>
 
@@ -157,8 +163,72 @@ const Header = () => {
                              <a className='cursor-pointer p-[10px] duration-200 hover:text-red-500'>Sessions</a>
                              <a className='cursor-pointer p-[10px] duration-200 hover:text-red-500'>Contact Us</a>
                              </div>
-                             <div className='p-[10px] hover:text-red-500 duration-200 cursor-pointer'>
-                                <a>All pages</a>
+                             <div className='p-[10px] flex flex-col gap-3  duration-200 '>
+                                <div onClick={()=>setPages(!pages)} className='flex items-center justify-between cursor-pointer'>
+                                      <a className='hover:text-red-500'>All pages</a>
+                                      <MdOutlineKeyboardArrowDown className={`${pages ? 'rotate-180 duration-200' :' duration-200'}`}/>
+                                </div>
+                                { pages &&
+                   <div className='flex pl-6 flex-col gap-3'>
+                  <div className='flex group items-center gap-2'>
+                 <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
+                 <a className='cursor-pointer hover:text-red-500 duration-200' href=""> Home1</a>
+                 </div>
+                 <div className='flex group duration-200 items-center gap-2'>
+                 <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
+                 <a className='cursor-pointer hover:text-red-500 duration-200' href=""> Home2</a>
+                 </div>
+                 <div className='flex group duration-200 items-center gap-2'>
+                 <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
+                 <a className='cursor-pointer hover:text-red-500 duration-200' href="">About Us</a>
+                 </div>
+                 <div className='flex group duration-200 items-center gap-2'>
+                 <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
+                 <a className='cursor-pointer hover:text-red-500 duration-200' href="">Our Team</a>
+                 </div>
+                 <div className='flex group duration-200 items-center gap-2'>
+                 <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
+                 <a className='cursor-pointer hover:text-red-500 duration-200' href="">Team Member</a>
+                 </div>
+                 <div className='flex group duration-200 items-center gap-2'>
+                 <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
+                 <a className='cursor-pointer hover:text-red-500 duration-200' href="">Pricing </a>
+                 </div>
+                 <div className='flex group duration-200 items-center gap-2'>
+                 <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
+                 <a className='cursor-pointer hover:text-red-500 duration-200' href="">FAQ </a>
+                 </div>
+                 <div className='flex group items-center gap-2'>
+                 <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
+                 <a className='cursor-pointer hover:text-red-500 duration-200' href=""> Contact Us</a>
+                 </div>
+                 <div className='flex group duration-200 items-center gap-2'>
+                 <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
+                 <a className='cursor-pointer hover:text-red-500 duration-200' href=""> Testimonials</a>
+                 </div>
+                 <div className='flex group duration-200 items-center gap-2'>
+                 <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
+                 <a className='cursor-pointer hover:text-red-500 duration-200' href="">Sessions</a>
+                 </div>
+                 <div className='flex group duration-200 items-center gap-2'>
+                 <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
+                 <a className='cursor-pointer hover:text-red-500 duration-200' href="">Sessions Details</a>
+                 </div>
+                 <div className='flex group duration-200 items-center gap-2'>
+                 <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
+                 <a className='cursor-pointer hover:text-red-500 duration-200' href="">Blog </a>
+                 </div>
+                 <div className='flex group duration-200 items-center gap-2'>
+                 <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
+                 <a className='cursor-pointer hover:text-red-500 duration-200' href="">Blog Details</a>
+                 </div>
+                 <div className='flex group duration-200 items-center gap-2'>
+                 <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
+                 <a className='cursor-pointer hover:text-red-500 duration-200' href="">Shop </a>
+                 </div>
+
+                                  </div>
+                                }
                              </div>
                      </div>
              </div>
