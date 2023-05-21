@@ -25,7 +25,7 @@ const Healty = () => {
             <img className='md:w-[40%] rounded-xl' src="https://assets.website-files.com/6399ec1645e218589086c9c0/639c52df872f31bde7d03e35_jed-villejo-bEcC0nyIp2g-unsplash%20(1).jpg" alt="" />
           </div>
        </div>
-       <div className='flex gap-8 md:gap-0 py-6 md:py-0 flex-col md:flex-row items-center  border-b-[1px] border-black   min-h-[40vh] '>
+       <div className='flex gap-8 md:gap-0 py-6 md:py-0 flex-col md:flex-row items-center   border-black   min-h-[40vh] '>
           <div className='space-y-1 flex order-2 md:order-1 flex-col  flex-1'>
           <p className='text-[#737886] text-lg'>10.01.2023</p>
           <h1 className='font-bold text-2xl cursor-pointer hover:text-[#FF5142] duration-200'>Depression can interfere with us, it often goes unrecognized, negatively affecting how we feel and how we act...</h1>

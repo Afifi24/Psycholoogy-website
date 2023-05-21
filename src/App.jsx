@@ -6,6 +6,7 @@ import Relationship from './components/Relationship'
 import People from './components/People'
 import Store from './components/Store'
 import Healty from './components/Healty'
+import Footer from './components/Footer'
 const App = () => {
   return (
     <div>
@@ -16,6 +17,7 @@ const App = () => {
         <People/>
         <Store/>
         <Healty/>
+        <Footer/>
     </div>
   )
 }
