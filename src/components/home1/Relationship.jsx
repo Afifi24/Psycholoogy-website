@@ -1,10 +1,8 @@
 import React from 'react'
-import img1 from '../assets/images/clien.jpg'
-import img2 from '../assets/images/pexels-anastasiya-lobanovskaya-1035677.jpg'
-import img3 from '../assets/images/pexels-luizclas-1848565 (1).jpg'
-import img4 from '../assets/images/pexels-admiral-general-m-⭐⭐⭐⭐⭐-godshepherdly-848573.jpg'
-import img5 from '../assets/images/pexels-oliver-sjöström-1047051.jpg'
+import {motion,useViewportScroll} from 'framer-motion'
 const Relationship = () => {
+  const { scrollYProgress } = useViewportScroll();
+
   return (
     <div className='min-h-screen bg-[#FFFAF7] font-Manrope py-20 mt-64  lg:mt-32'>
      <div className='w-[90%] m-auto'>
@@ -22,12 +20,12 @@ const Relationship = () => {
           </div>
      </div>
      <div className='flex  flex-col md:flex-row items-center mt-10 gap-10 '>
-             <div className='flex-1 rounded-xl overflow-hidden'>
+             <motion.div initial={{scale:0.9}}  whileInView={{scale:1}} transition={{duration:1}}  className='flex-1 rounded-xl overflow-hidden'>
                <img src='https://assets.website-files.com/6399ec1545e218ece386c9b6/639b3b10397f071f66561332_anthony-tran-i-ePv9Dxg7U-unsplash%204.webp' alt="" />
-             </div>
-             <div className='flex-1 rounded-xl overflow-hidden'>
+             </motion.div>
+             <motion.div initial={{scale:0.9}} whileInView={{scale:1}} transition={{duration:1}} className='flex-1 rounded-xl overflow-hidden'>
                <img src='https://assets.website-files.com/6399ec1545e218ece386c9b6/639b3b0dc93a8949dd8d45a9_anthony-tran-i-ePv9Dxg7U-unsplash%203.webp' alt="" />
-             </div>
+             </motion.div>
      </div>
 
      </div>

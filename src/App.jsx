@@ -1,23 +1,14 @@
 import React from 'react'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import Client from './components/Client'
-import Relationship from './components/Relationship'
-import People from './components/People'
-import Store from './components/Store'
-import Healty from './components/Healty'
-import Footer from './components/Footer'
+import Home1 from './Pages/Home1'
+import Home2 from './Pages/Home2'
+import { Route,Routes } from 'react-router-dom'
 const App = () => {
   return (
     <div>
-        <Header/>
-        <Hero/>
-        <Client/>
-        <Relationship/>
-        <People/>
-        <Store/>
-        <Healty/>
-        <Footer/>
+        <Routes>
+          <Route path='/' element={<Home1/>}/>
+          <Route path='/home2' element={<Home2/>}/>
+        </Routes>
     </div>
   )
 }

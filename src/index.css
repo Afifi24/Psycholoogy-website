@@ -18,31 +18,19 @@
   100%{
     transform: translate(0px,-40px);
   }
+  
 }
 .shaddow{
   box-shadow: 0.5px 0.5px 30px rgba(0,0,0,0.1);
 }
-.image2-animation {
-animation: moveUpdown 3s infinite alternate ;
+
+.bgheaderhome2{
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("https://assets.website-files.com/6399ec1545e218ece386c9b6/639a17be83ad358b7e42ca6d_Home1-Banner.webp");
+background-position: 0 0, 50%;
+background-size: auto, cover;
+background-attachment: scroll, scroll;
 }
-@keyframes moveUpdown {
-    0%{
-        transform: translate(0px,-40px);
-      }  
-      100%{
-        transform: translate(-50px,0px);
-       
-      }
-}
-.image3-animation{
-    animation: moveupdown3 3s infinite alternate;
-}
-@keyframes moveupdown3 {
-    0%{
-        
-        transform: translateX(-40px);
-    }
-    100%{
-        transform: translateX(0px);
-    }
+
+.cardbg{
+  background-color: rgba(255, 255, 255, .1);
 }

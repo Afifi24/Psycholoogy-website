@@ -1,5 +1,5 @@
 import React from 'react'
-import clientimg from '../assets/images/pexels-andrea-piacquadio-789822.jpg'
+import clientimg from '../../assets/images/pexels-andrea-piacquadio-789822.jpg'
 const Client = () => {
   return (
     <div>

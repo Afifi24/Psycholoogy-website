@@ -1,10 +1,11 @@
 import React, { useState,useRef } from 'react'
-import logo from '../assets/images/psi-removebg-preview.png'
 import {AiOutlineBars} from 'react-icons/ai'
 import {MdOutlineClose} from 'react-icons/md'
 import {MdOutlineKeyboardArrowDown} from 'react-icons/md'
-
+import {easeInOut, motion} from 'framer-motion'
+import { Link } from 'react-router-dom'
 const Header = () => {
+
     const [isopen,setIsopen] = useState(false)
     const [show,setShow] = useState(false)
     const [pages,setPages] = useState(false)
@@ -31,12 +32,16 @@ const Header = () => {
                 {
                   show &&  <div className='bg-white text-[15px] rounded-xl p-4 min-w-[150px] absolute top-16 text-black flex flex-col gap-2'>
                  <div className='flex group items-center gap-2'>
-                 <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
-                 <a className='cursor-pointer hover:text-red-500 duration-200' href=""> home1</a>
+                 <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'/>
+                 <Link to={'/'}>
+                 <p className='cursor-pointer hover:text-red-500 duration-200' href=""> home1</p>
+                 </Link>
                  </div>
                  <div className='flex group duration-200 items-center gap-2'>
-                 <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
-                 <a className='cursor-pointer hover:text-red-500 duration-200' href=""> home2</a>
+                 <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'/>
+                 <Link to={'/home2'}>
+                 <p className='cursor-pointer hover:text-red-500 duration-200' href=""> home2</p>
+                 </Link>
                  </div>
                  <div className='w-5 h-5 bg-white absolute  -top-2 rotate-45'></div>
                   </div>
@@ -149,11 +154,11 @@ const Header = () => {
                                     <div className='flex pl-6 flex-col gap-3'>
                                      <div className='flex group items-center gap-2'>
                                         <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
-                                        <a className='cursor-pointer hover:text-red-500 duration-200' href=""> home1</a>
+                                        <Link to={'/'}><p className='cursor-pointer hover:text-red-500 duration-200' href=""> home1</p></Link>
                                         </div>
                                         <div className='flex group duration-200 items-center gap-2'>
                                         <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
-                                        <a className='cursor-pointer hover:text-red-500 duration-200' href=""> home2</a>
+                                        <Link to={'/home2'}><p className='cursor-pointer hover:text-red-500 duration-200' href=""> home2</p></Link>
                                         </div>
                                 </div>}
                             </div>
@@ -240,17 +245,56 @@ const Header = () => {
          <header className=' mt-32 lg:mt-16'>
              <div className='flex flex-col  lg:flex-row items-center '>
                <div className='flex flex-col text-white justify-center gap-8'>
-               <h1 className=' text-5xl lg:text-6xl leading-[48px] lg:leading-[70px] font-bold'>Your Mental <br /> Health Matters</h1>
-               <p className='text-lg'>I help people across the country and around the world create and sustain loving and resilient relationship.</p>
-               <button className=' w-fit  rounded-full z-50 hover:text-white bg-white  text-[#615c5c] duration-200 border hover:bg-transparent text-lg py-5 px-8'>Book a consultation</button>
+               <motion.div initial={{opacity:0,y:60}} animate={{opacity:1,y:0}} transition={{delay:0.5, duration:0.5}}  className=' text-5xl lg:text-6xl leading-[48px] lg:leading-[70px] font-bold'>Your Mental <br /> Health Matters</motion.div>
+               <motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1}}  className='text-lg'>I help people across the country and around the world create and sustain loving and resilient relationship.</motion.p>
+               <motion.button initial={{opacity:0}} animate={{opacity:1}} transition={{ duration:1.5,delay:1}} className=' w-fit  rounded-full z-50 hover:text-white bg-white  text-[#615c5c] duration-200 border hover:bg-transparent text-lg py-5 px-8'>Book a consultation</motion.button>
                </div>
-               <div className='w-full'>
-                <img className=' lg:absolute z-50 lg:w-1/2 xl:w-full lg:right-3 lg:-bottom-2 xl:relative'  src="https://assets.website-files.com/6399ec1545e218ece386c9b6/639cb57a567c9cb407a525ae_My%20project%201.webp" alt="" />
+               <div  className='w-full z-50'>
+                <motion.img initial={{scale:1.5}} animate={{scale:1}} transition={{duration:1.5}}  className=' lg:absolute z-50 lg:w-1/2 xl:w-full lg:right-3 lg:-bottom-2 xl:relative'  src="https://assets.website-files.com/6399ec1545e218ece386c9b6/639cb57a567c9cb407a525ae_My%20project%201.webp" alt="" />
                </div>
-                <img className='absolute image1-animation w-1/2 md:w-1/3 top-4 left-2' src="https://assets.website-files.com/6399ec1545e218ece386c9b6/639ca9553510a31b2c95753b_Vector%2024.svg" alt="" />
-                <img className=' absolute hidden lg:block image2-animation    left-0 w-1/3 -bottom-48 md:-bottom-10 md:w-1/4 ' src="https://assets.website-files.com/6399ec1545e218ece386c9b6/639ca955617149547d8b36c3_Vector%2023.svg" alt="" />
-                <img className='absolute w-full top-1/2 md:top-40 -right-10 image3-animation md:w-1/2' src="https://assets.website-files.com/6399ec1545e218ece386c9b6/639ca955155635f6990e12b1_Vector%2022.svg" alt="" />
-                <img className='absolute image2-animation hidden lg:block bottom-0  -right-20 md:w-[50%]' src="	https://assets.website-files.com/6399ec1545e218ece386c9b6/639ca9553510a3d50195753a_Vector%2025.svg" alt="" />
+                <motion.img 
+                 initial={{ x: -50, y: 0 }}
+                 animate={{ x: 0, y: -40 }}
+                 transition={{
+                   duration: 3,
+                   repeat: Infinity,
+                   repeatType: 'reverse',
+                   ease: 'easeInOut',
+                 }}
+                className='absolute  w-1/2 md:w-1/3 top-4 left-0' src="https://assets.website-files.com/6399ec1545e218ece386c9b6/639ca9553510a31b2c95753b_Vector%2024.svg" alt="" />
+                <motion.img 
+                initial={{ x: 0, y: -40 }}
+                animate={{ x: -50, y: 0 }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  repeatType: 'reverse',
+                  ease: 'easeInOut',
+                }}
+                className=' absolute hidden lg:block     left-0 w-1/3 -bottom-48 md:-bottom-10 md:w-1/4 ' src="https://assets.website-files.com/6399ec1545e218ece386c9b6/639ca955617149547d8b36c3_Vector%2023.svg" alt="" />
+                <motion.img 
+                 initial={{x:-40}}
+                 animate={{x:0}}
+                 transition={{
+                  duration:4,
+                  repeat:Infinity,
+                  repeatType:'reverse',
+                  ease:'easeInOut'
+
+
+                 }}
+                className='absolute w-full top-1/2 md:top-40 -right-10  md:w-1/2' src="https://assets.website-files.com/6399ec1545e218ece386c9b6/639ca955155635f6990e12b1_Vector%2022.svg" alt="" />
+                <motion.img 
+                initial={{x:0,y:-40}}
+                animate={{x:-50,y:0}}
+                transition ={{
+                  duration:3,
+                  repeat:Infinity,
+                  repeatType:'reverse',
+                  ease: 'easeInOut'
+                }}
+                
+                className='absolute  hidden lg:block bottom-0  -right-20 md:w-[50%]' src="	https://assets.website-files.com/6399ec1545e218ece386c9b6/639ca9553510a3d50195753a_Vector%2025.svg" alt="" />
              </div>
          </header>
       </div>

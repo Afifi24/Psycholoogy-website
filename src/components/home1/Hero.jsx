@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import imghero from '../assets/images/hero.jpg'
-import { testimonials } from '../Data'
+import imghero from '../../assets/images/hero.jpg'
+import { testimonials } from '../../Data'
 import Testimonials from './Testimonials'
 const Hero = () => {
   return (

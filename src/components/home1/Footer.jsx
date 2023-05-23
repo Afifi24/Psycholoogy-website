@@ -30,10 +30,10 @@ const Footer = () => {
                 <div className='flex-1 order-2 md:order-1'>
                     <p className='text-[#737886] text-sm'>&copy; Psychology. All the Rights Reserved 2023</p>
                 </div>
-                <div className=' space-y-3 order-1 md:order-2 flex-1'>
+                <form className=' space-y-3 order-1 md:order-2 flex-1'>
                     <h2 className='text-2xl font-bold text-[#ff5142]  '>Subscribe to the latest news</h2>
-                    <input className=' w-full md:w-[80%] border-b focus:border-[#ff5142] duration-200 bg-transparent text-xl outline-none py-3 px-3' type="text" placeholder='Email' />
-                </div>
+                    <input required className=' w-full md:w-[80%] border-b focus:border-[#ff5142] duration-200 bg-transparent text-xl outline-none py-3 px-3' type="text" placeholder='Email' />
+                </form>
 
             </div>
          </div>
