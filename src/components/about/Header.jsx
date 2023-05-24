@@ -20,7 +20,7 @@ const Header = () => {
     }
   return (
     <div>
-      <div className='bgheaderhome2 font-Manrope relative overflow-hidden px-4 lg:px-10 pt-4 min-h-screen   '>
+      <div className='bgheaderabout font-Manrope relative overflow-hidden px-4 lg:px-10 pt-4 md:min-h-screen   '>
          <nav className='flex items-center justify-between '>
             <div className='flex items-center gap-3'>
                 <img className='w-48' src='https://assets.website-files.com/6399ec1545e218ece386c9b6/639a0d680ebba097d7bc57b5_Psychology-logo-white.svg' alt="" />
@@ -242,26 +242,12 @@ const Header = () => {
             
          </nav>
          
-         <header className=' mt-32 lg:mt-16'>
-             <div className='flex  gap-16 pb-10 md:pb-0 min-h-screen md:pl-10 md:flex-row flex-col items-center '>
-             <div  className=' space-y-4 text-white w-full  md:w-auto order-2 md:min-w-[200px] md:order-1 z-50'>
-                  <motion.div initial={{opacity:0,y:100}} animate={{opacity:1,y:0}} transition={{duration:0.5, delay:0.5}} className='cardbg w-full  rounded-xl space-y-2   p-8'>
-                     <h1 className=' font-bold  text-5xl '>10,000+ </h1>
-                     <p className=''>Happy Clients</p>
-                  </motion.div>
-                  <motion.div initial={{opacity:0,y:100}} animate={{opacity:1,y:0}} transition={{delay:0.75, duration:0.5}} className='cardbg w-full rounded-xl space-y-2  md:min-w-[200px] p-8'>
-                     <h1 className=' font-bold  text-5xl '>10 </h1>
-                     <p className=''>Mentoring Classes</p>
-                  </motion.div>
-                  <motion.div initial={{opacity:0,y:100}} animate={{opacity:1,y:0}} transition={{duration:0.5, delay:1}} className='cardbg w-full rounded-xl space-y-2  md:min-w-[200px] p-8'>
-                     <h1 className=' font-bold  text-5xl '>30 </h1>
-                     <p className=''>Years Experience</p>
-                  </motion.div>
-               </div>
-               <div className='flex order-1 md:order-2 flex-col text-white justify-center gap-8'>
-               <motion.div initial={{opacity:0,y:60}} animate={{opacity:1,y:0}} transition={{delay:0.5, duration:0.5}}  className=' text-6xl lg:text-6xl md:leading-[48px] leading-[68px] lg:leading-[70px] font-bold'>Your Mental <br /> Health Matters</motion.div>
+         <header className=' mt-24 min-h-[40vh] lg:mt-32'>
+             <div className='flex  pb-10 md:pb-0  md:flex-row flex-col items-center '>
+            
+               <div className='flex text-center md:text-left flex-col text-white justify-center  md:gap-8'>
+               <motion.div initial={{opacity:0,y:60}} animate={{opacity:1,y:0}} transition={{delay:0.5, duration:0.5}}  className=' text-5xl md:text-6xl lg:text-7xl md:leading-[48px] leading-[68px] lg:leading-[70px] font-bold'>About Us</motion.div>
                <motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1}}  className='text-lg max-w-xl'>I help people across the country and around the world create and sustain loving and resilient relationship.</motion.p>
-               <motion.button initial={{opacity:0}} animate={{opacity:1}} transition={{ duration:1.5,delay:1}} className=' w-fit  rounded-full z-50  bg-[#FF5142]  text-white duration-200 border border-transparent hover:text-[#FF5142] hover:border-[#FF5142]  hover:bg-transparent text-lg py-5 px-8'>Book a consultation</motion.button>
                </div>
                
                

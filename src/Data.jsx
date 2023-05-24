@@ -50,3 +50,22 @@ export const people = [
         desc:'"Mental health is not a goal, but a process. It’s about how drive, not where you go. Here i come with several services to help you understand how to drive well."',
       },
 ]
+
+
+export const Location = [
+      {
+            id:1,
+            title:'Stress Management',
+            desc:'Mental health is not a goal, but a process.',
+      },
+      {
+            id:2,
+            title:'Dating & Relationships',
+            desc:'Mental health is not a goal, but a process.',
+      },
+      {
+            id:3,
+            title:'Self-Esteem Issues',
+            desc:'Mental health is not a goal, but a process.',
+      },
+]

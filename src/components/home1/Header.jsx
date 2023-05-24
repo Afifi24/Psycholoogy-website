@@ -20,7 +20,7 @@ const Header = () => {
     }
   return (
     <div>
-      <div className='bg-[#FF5142] relative overflow-hidden px-4 lg:px-10 pt-4 min-h-screen font-Kumbh m-2 rounded-xl'>
+      <div className='bg-[#FF5142] relative overflow-hidden px-4 lg:px-10 pt-4 min-h-screen font-Manrope m-2 rounded-xl'>
          <nav className='flex items-center justify-between '>
             <div className='flex items-center gap-3'>
                 <img className='w-48' src='https://assets.website-files.com/6399ec1545e218ece386c9b6/639a0d680ebba097d7bc57b5_Psychology-logo-white.svg' alt="" />
