@@ -4,7 +4,7 @@ const Relationship = () => {
   const { scrollYProgress } = useViewportScroll();
 
   return (
-    <div className='min-h-screen bg-[#FFFAF7] font-Manrope py-20 mt-64  lg:mt-32'>
+    <div className='min-h-screen bg-[#FFFAF7] font-Manrope py-20 mt-64  lg:mt-16'>
      <div className='w-[90%] m-auto'>
      <div className='flex flex-col lg:flex-row  items-center gap-32'>
           <div className='flex flex-1 flex-col gap-4'>

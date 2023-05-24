@@ -2,8 +2,8 @@ import React from 'react'
 import clientimg from '../../assets/images/pexels-andrea-piacquadio-789822.jpg'
 const Client = () => {
   return (
-    <div>
-        <div className='mt-20 pt-10  flex-col lg:flex-row flex gap-10 items-start w-[90%] m-auto font-Manrope min-h-screen'>
+    <div className='bg-[#FFFAF7] pt-10'>
+        <div className='  mb-10  flex-col-reverse lg:flex-row-reverse flex gap-56 lg:gap-20 items-start w-[90%] m-auto font-Manrope min-h-screen'>
            <div className='flex flex-col gap-6 flex-1'>
             <h1 className='uppercase text-red-500'>what client says</h1>
             <p className='font-bold text-[#0E0E0E] mt-6 max-w-4xl text-4xl'>TheraMental is a company engaged in mental health consulting</p>
@@ -12,7 +12,7 @@ const Client = () => {
            </div>
            <div className='flex-1 relative'>
             <img className='rounded-xl' src={clientimg} alt="" />
-            <div className='absolute   right-5 left-5 bg-white -bottom-48 lg:-bottom-32 lg:right-20  lg:-left-10   space-y-2 p-10 rounded-xl shaddow'>
+            <div className='absolute   right-5 left-5 bg-white -bottom-48 lg:-bottom-32 lg:right-20  lg:-right-10   space-y-2 p-10 rounded-xl shaddow'>
                 <h1 className=' font-bold text-xl sm:text-2xl  text-red-500'>You don’t have to control your thoughts. You just have to stop letting them control you.</h1>
                 <p className='text-[#737886]'>Jenie Cooper, 24 y.o</p>
 

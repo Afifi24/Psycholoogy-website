@@ -2,7 +2,7 @@ import React from "react";
 const Family = ()=>{
     return(
         <div className="min-h-screen bg-[#FFFAF7] font-Manrope mt-14 py-10  lg:mt-28 lg:py-20">
-          <div className="w-[90%] space-y-10 md:space-y-32  m-auto">
+          <div className="w-[90%] space-y-10 md:space-y-10  m-auto">
            <div className="space-y-6 flex flex-col md:flex-row rounded-xl shaddow gap-10 bg-white justify-center p-6 lg:p-10">
             <div className="flex order-2 md:order-1 flex-col gap-4 lg:gap-8">
                  <h1 className="text-4xl hover:text-[#ff5142] duration-200  font-bold">Family Issues</h1>

@@ -50,7 +50,7 @@ const Header = () => {
                 </li>
                
                 
-                <li className='text-white p-[20px] text-lg hover:text-[#FFCBC7] duration-200 cursor-pointer '>About</li>
+                <Link to={'/about'}><li className='text-white p-[20px] text-lg hover:text-[#FFCBC7] duration-200 cursor-pointer '>About</li></Link>
                 <li className='text-white p-[20px] text-lg hover:text-[#FFCBC7] duration-200 cursor-pointer '>Sessions</li>
                 <li className='text-white p-[20px] text-lg hover:text-[#FFCBC7] duration-200 cursor-pointer '>Contact Us</li>
                 <li onMouseEnter={()=>setPages(true)} onMouseLeave={()=>setPages(false)} className='text-white  p-[20px] z-[100]   relative text-lg '>
