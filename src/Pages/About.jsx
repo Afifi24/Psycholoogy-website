@@ -7,6 +7,7 @@ import Client from "../components/about/Client";
 import People from '../components/about/People'
 import Healty from '../components/about/Healty'
 import Footer from '../components/about/Footer'
+import Team from '../components/about/Team'
 const About = ()=>{
     return(
         <div className="">
@@ -16,6 +17,7 @@ const About = ()=>{
              <Family/>
              <Client/>
              <People/>
+             <Team/>
              <Healty/>
              <Footer/>
         </div>

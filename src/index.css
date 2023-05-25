@@ -40,3 +40,17 @@ background-attachment: scroll, scroll;
 background-position: 0 0, 50%;
 background-size: auto, cover;
 }
+
+.transparentbg{
+background-image: linear-gradient(to top, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+position: absolute;
+top: 0%;
+bottom: 0%;
+left: 0%;
+right: 0%;
+}
+.bgheadersession{
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("https://assets.website-files.com/6399ec1545e218ece386c9b6/63a1e45ab4ace124e6c03eae_pexels-pavel-danilyuk-6712704.webp");
+background-position: 0 0, 50% 25%;
+background-size: auto, cover;
+}

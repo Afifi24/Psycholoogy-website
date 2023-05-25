@@ -20,17 +20,17 @@ const Header = () => {
     }
   return (
     <div>
-      <div className='bgheaderhome2 font-Manrope relative overflow-hidden px-4 lg:px-10 pt-4 min-h-screen   '>
-         <nav className='flex items-center justify-between '>
+      <div className=' relative overflow-hidden  pt-4 lg:min-h-screen font-Manrope '>
+         <nav className='flex items-center px-4 lg:px-10 justify-between '>
             <div className='flex items-center gap-3'>
-                <img className='w-48' src='https://assets.website-files.com/6399ec1545e218ece386c9b6/639a0d680ebba097d7bc57b5_Psychology-logo-white.svg' alt="" />
+                <img className='w-48' src='https://assets.website-files.com/6399ec1545e218ece386c9b6/639a01df2ec4b125a8cb52a2_Psychology-logo-dark.svg' alt="" />
                 
             </div>
             <ul className=' hidden lg:flex  items-center gap-0'>
-                <li onMouseEnter={Showhide} onMouseLeave={Showhide} className='text-white  p-[20px] z-50   relative text-lg '>
+                <li onMouseEnter={Showhide} onMouseLeave={Showhide} className='  p-[20px] z-50   relative text-lg '>
                   <p className=' hover:text-[#FFCBC7] cursor-pointer'>Demos</p>
                 {
-                  show &&  <div className='bg-white text-[15px] rounded-xl p-4 min-w-[150px] absolute top-16 text-black flex flex-col gap-2'>
+                  show &&  <div className='bg-white text-[15px] shaddow rounded-xl p-4 min-w-[150px] absolute top-16 text-black flex flex-col gap-2'>
                  <div className='flex group items-center gap-2'>
                  <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'/>
                  <Link to={'/'}>
@@ -50,15 +50,15 @@ const Header = () => {
                 </li>
                
                 
-                <Link to={'/about'}><li className='text-white p-[20px] text-lg hover:text-[#FFCBC7] duration-200 cursor-pointer '>About</li></Link>
-                <Link to={'/sessions'}> <li className='text-white p-[20px] text-lg hover:text-[#FFCBC7] duration-200 cursor-pointer '>Sessions</li></Link>
-                <Link to={'/contact'}><li className='text-white p-[20px] text-lg hover:text-[#FFCBC7] duration-200 cursor-pointer '>Contact Us</li></Link>
-                <li onMouseEnter={()=>setPages(true)} onMouseLeave={()=>setPages(false)} className='text-white  p-[20px] z-[100]   relative text-lg '>
+                <Link to={'/about'}><li className=' p-[20px] text-lg hover:text-[#FFCBC7] duration-200 cursor-pointer '>About</li></Link>
+                <Link to={'/sessions'}> <li className=' p-[20px] text-lg hover:text-[#FFCBC7] duration-200 cursor-pointer '>Sessions</li></Link>
+               <Link to={'/contact'}><li className=' p-[20px] text-lg hover:text-[#FFCBC7] duration-200 cursor-pointer '>Contact Us</li></Link>
+                <li onMouseEnter={()=>setPages(true)} onMouseLeave={()=>setPages(false)} className='  p-[20px] z-[100]   relative text-lg '>
                   <p className=' hover:text-[#FFCBC7] cursor-pointer'>All pages</p>
                 {
                   pages && 
                   
-                <div className='bg-white rounded-xl p-6 min-w-[380px] absolute top-16 text-black flex items-center gap-12'>
+                <div className='bg-white shaddow rounded-xl p-6 min-w-[380px] absolute top-16 text-black flex items-center gap-12'>
                 <div className='text-[15px]'>
                 <div className='flex group items-center gap-2'>
                  <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
@@ -125,9 +125,9 @@ const Header = () => {
                 
                 </li>
             </ul>
-            <button className=' hidden lg:flex  rounded-full text-white   hover:text-[#FF5142] duration-200 border hover:bg-white text-lg py-5 px-8'>Book a consultation</button>
+            <button className=' hidden lg:flex  rounded-full text-black   hover:text-white duration-200 border border-[#FF5142] hover:bg-[#FF5142] text-lg py-5 px-8'>Book a consultation</button>
             <div onClick={()=>setIsopen(!isopen)} className='lg:hidden z-50 cursor-pointer text-white text-4xl'>
-                <AiOutlineBars className={` ${isopen ? 'text-black':''}`}/>
+                <AiOutlineBars className={` ${isopen ? 'text-black':'text-black'}`}/>
                 
             </div>
             {/* mobile menu */}
@@ -164,7 +164,7 @@ const Header = () => {
                             </div>
 
                              <div className='flex flex-col'>
-                             <Link to={'/about'}> <p className='cursor-pointer p-[10px] duration-200 hover:text-red-500'>About</p></Link>
+                             <a className='cursor-pointer p-[10px] duration-200 hover:text-red-500'>About</a>
                              <a className='cursor-pointer p-[10px] duration-200 hover:text-red-500'>Sessions</a>
                              <a className='cursor-pointer p-[10px] duration-200 hover:text-red-500'>Contact Us</a>
                              </div>
@@ -242,29 +242,10 @@ const Header = () => {
             
          </nav>
          
-         <header className=' mt-32 lg:mt-16'>
-             <div className='flex  gap-16 pb-10 md:pb-0 min-h-screen md:pl-10 md:flex-row flex-col items-center '>
-             <div  className=' space-y-4 text-white w-full  md:w-auto order-2 md:min-w-[200px] md:order-1 z-50'>
-                  <motion.div initial={{opacity:0,y:100}} animate={{opacity:1,y:0}} transition={{duration:0.5, delay:0.5}} className='cardbg w-full  rounded-xl space-y-2   p-8'>
-                     <h1 className=' font-bold  text-5xl '>10,000+ </h1>
-                     <p className=''>Happy Clients</p>
-                  </motion.div>
-                  <motion.div initial={{opacity:0,y:100}} animate={{opacity:1,y:0}} transition={{delay:0.75, duration:0.5}} className='cardbg w-full rounded-xl space-y-2  md:min-w-[200px] p-8'>
-                     <h1 className=' font-bold  text-5xl '>10 </h1>
-                     <p className=''>Mentoring Classes</p>
-                  </motion.div>
-                  <motion.div initial={{opacity:0,y:100}} animate={{opacity:1,y:0}} transition={{duration:0.5, delay:1}} className='cardbg w-full rounded-xl space-y-2  md:min-w-[200px] p-8'>
-                     <h1 className=' font-bold  text-5xl '>30 </h1>
-                     <p className=''>Years Experience</p>
-                  </motion.div>
-               </div>
-               <div className='flex order-1 md:order-2 flex-col text-white justify-center gap-8'>
-               <motion.div initial={{opacity:0,y:60}} animate={{opacity:1,y:0}} transition={{delay:0.5, duration:0.5}}  className=' text-6xl lg:text-6xl md:leading-[48px] leading-[68px] lg:leading-[70px] font-bold'>Your Mental <br /> Health Matters</motion.div>
-               <motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1}}  className='text-lg max-w-xl'>I help people across the country and around the world create and sustain loving and resilient relationship.</motion.p>
-               <motion.button initial={{opacity:0}} animate={{opacity:1}} transition={{ duration:1.5,delay:1}} className=' w-fit  rounded-full z-50  bg-[#FF5142]  text-white duration-200 border border-transparent hover:text-[#FF5142] hover:border-[#FF5142]  hover:bg-transparent text-lg py-5 px-8'>Book a consultation</motion.button>
-               </div>
-               
-               
+         <header className=' mt-4   lg:mt-4'>
+             <div className='flex h-[50vh] md:h-[80vh] md:w-full flex-col  lg:flex-row items-center '>
+              <img className='h-full w-full object-cover' src="https://assets.website-files.com/6399ec1545e218ece386c9b6/63a19449100c7ce20b57ac87_Nimble%20Division%20Map.webp" alt="" />
+  
              </div>
          </header>
       </div>
