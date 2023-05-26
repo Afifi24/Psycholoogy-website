@@ -20,7 +20,7 @@ const Header = () => {
     }
   return (
     <div>
-      <div className='bgheadersession font-Manrope relative overflow-hidden px-4 lg:px-10 pt-4 md:min-h-screen   '>
+      <div className='bgheaderteam font-Manrope relative overflow-hidden px-4 lg:px-10 pt-4 md:min-h-screen   '>
          <nav className='flex items-center justify-between '>
             <div className='flex items-center gap-3'>
                 <img className='w-48' src='https://assets.website-files.com/6399ec1545e218ece386c9b6/639a0d680ebba097d7bc57b5_Psychology-logo-white.svg' alt="" />
@@ -100,18 +100,17 @@ const Header = () => {
                   </div>
                 }
                 
-                
                 </li>
             </ul>
             <button className=' hidden lg:flex  rounded-full text-white   hover:text-[#FF5142] duration-200 border hover:bg-white text-lg py-5 px-8'>Book a consultation</button>
-           
+            
          </nav>
          
          <header className=' mt-24 min-h-[40vh] lg:mt-32'>
              <div className='flex  pb-10 md:pb-0  md:flex-row flex-col items-center '>
             
                <div className='flex text-center md:text-left flex-col text-white justify-center  md:gap-8'>
-               <motion.div initial={{opacity:0,y:60}} animate={{opacity:1,y:0}} transition={{delay:0.5, duration:0.5}}  className=' text-5xl md:text-6xl lg:text-7xl md:leading-[48px] leading-[68px] lg:leading-[70px] font-bold'>Sessions</motion.div>
+               <motion.div initial={{opacity:0,y:60}} animate={{opacity:1,y:0}} transition={{delay:0.5, duration:0.5}}  className=' text-5xl md:text-6xl lg:text-7xl md:leading-[48px] leading-[68px] lg:leading-[70px] font-bold'>Our team</motion.div>
                <motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1}}  className='text-lg max-w-xl'>I help people across the country and around the world create and sustain loving and resilient relationship.</motion.p>
                </div>
                

@@ -54,3 +54,9 @@ right: 0%;
 background-position: 0 0, 50% 25%;
 background-size: auto, cover;
 }
+
+.bgheaderteam{
+  background-image: linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)), url("https://assets.website-files.com/6399ec1545e218ece386c9b6/63a084d7b78efef51ea395d8_pexels-yan-krukov-8837166.webp");
+  background-position: 0 0, 50%;
+background-size: auto, cover;
+}
