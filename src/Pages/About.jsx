@@ -6,7 +6,6 @@ import Family from '../components/about/Family'
 import Client from "../components/about/Client";
 import People from '../components/about/People'
 import Healty from '../components/about/Healty'
-import Footer from '../components/about/Footer'
 import Team from '../components/about/Team'
 const About = ()=>{
     return(
@@ -19,7 +18,6 @@ const About = ()=>{
              <People/>
              <Team/>
              <Healty/>
-             <Footer/>
         </div>
     )
 }

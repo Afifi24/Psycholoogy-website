@@ -12,8 +12,8 @@ const Footer = () => {
               <div className=' flex flex-col gap-10 flex-1'>
                 <p className='text-lg text-center md:text-left text-[#737886]'>Mental health is not a goal, but a process. It’s about how drive, not where you go. Here i come with several services to help you understand how to drive well.</p>
                 <div className='flex items-center md:items-start md:justify-start justify-center gap-4'>
-                <button className='   rounded-full  z-50 hover:text-[#FF5142] bg-[#FF5142]   text-white duration-200 border border-[#FF5142] hover:bg-transparent text-md md:text-lg py-4 px-5  md:px-8'>Book a consultation</button>
-                <button className='   rounded-full  z-50 hover:text-white   duration-200 border border-[#FF5142] hover:bg-[#FF5142] text-md  md:text-lg py-4 px-5  md:px-8'>Who we are</button>
+                <button className='   rounded-full  z-50 hover:text-[#FF5142] bg-[#FF5142]   text-white duration-200 border border-[#FF5142] hover:bg-transparent text-md md:text-lg py-2 md:py-4 px-5  md:px-8'>Book a consultation</button>
+                <button className='   rounded-full  z-50 hover:text-white   duration-200 border border-[#FF5142] hover:bg-[#FF5142] text-md md:text-lg py-2 md:py-4 px-5  md:px-8'>Who we are</button>
                 </div>
               </div>
             </div>

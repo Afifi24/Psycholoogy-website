@@ -15,16 +15,17 @@ const Nav = ({isopen, setIsopen})=> {
     const Showhide = ()=>{
         setShow(!show)
   }
+  console.log(useref.current)
     return(
         <div>
             
             {/* mobile menu */}
             {
                 isopen &&
-               <div onClick={closenav} ref={useref} className={`fixed ${isopen ? '-translate-x-0 duration-500':'-translate-x-full duration-500'} w-full z-[100]   left-0 top-0 `}>
-                 <div className={`lg:hidden ${isopen ? '-translate-x-0 duration-500':'-translate-x-full duration-500'}  absolute top-0 left-0 h-full min-h-screen  py-6 w-2/3 bg-white`} id='mobile'>
+               <div onClick={closenav} ref={useref} className={`fixed ${isopen ? '-translate-x-0 duration-500':'-translate-x-full duration-500'} w-full z-[100] cursor-pointer right-0 left-0 top-0 `}>
+                 <div className={`lg:hidden ${isopen ? '-translate-x-0 duration-500':'-translate-x-full duration-500'}  absolute top-0 left-0 h-full min-h-screen pl-4  py-6 w-2/3 bg-white`} id='mobile'>
                      <div className='flex items-center'>
-                        <h1 className='font-bold text-xl uppercase'>psychology</h1>
+                     <img className=' w-[50%] md:w-[20%]' src="https://assets.website-files.com/6399ec1545e218ece386c9b6/639a01df2ec4b125a8cb52a2_Psychology-logo-dark.svg" alt="" />
                      <MdOutlineClose onClick={()=>setIsopen(!isopen)} className='text-4xl cursor-pointer absolute right-4 top-6'/>
 
                      </div>

@@ -62,7 +62,7 @@ const Header = () => {
                 <div className=' flex-1 text-[15px]'>
                 <div className='flex group items-center gap-2'>
                  <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
-                 <Link to={'/home1'}><p className='cursor-pointer hover:text-red-500 duration-200' href=""> Home1</p></Link>
+                 <Link to={'/'}><p className='cursor-pointer hover:text-red-500 duration-200' href=""> Home1</p></Link>
                  </div>
                  <div className='flex group duration-200 items-center gap-2'>
                  <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>

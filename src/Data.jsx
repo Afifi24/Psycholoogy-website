@@ -87,3 +87,34 @@ export const address = [
             email:'information@office.com'
       }
 ]
+
+
+export const price = [
+      {
+           id:1,
+           title:'Online Skype Session',
+           desc:'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut.',
+           price:'50',
+           conf:'Confidential',
+           licence:'Licensed Psychologist',
+           shedule:'on Your Schedule' 
+      },
+      {
+           id:2,
+           title:'Individual Session',
+           desc:'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut.',
+           price:'60',
+           conf:'Confidential',
+           licence:'Licensed Psychologist',
+           shedule:'on Your Schedule' 
+      },
+      {
+           id:3,
+           title:'Family/Couple Session',
+           desc:'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut.',
+           price:'80',
+           conf:'Confidential',
+           licence:'Licensed Psychologist',
+           shedule:'on Your Schedule' 
+      },
+]

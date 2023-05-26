@@ -23,7 +23,7 @@ const Header = () => {
       <div className='bgheadersession font-Manrope relative overflow-hidden px-4 lg:px-10 pt-4 md:min-h-screen   '>
          <nav className='flex items-center justify-between '>
             <div className='flex items-center gap-3'>
-                <img className='w-48' src='https://assets.website-files.com/6399ec1545e218ece386c9b6/639a0d680ebba097d7bc57b5_Psychology-logo-white.svg' alt="" />
+                <img className='w-48' src='https://assets.website-files.com/6399ec1545e218ece386c9b6/639a01dfd62c9f5f9a7057ee_Psychology-logo.svg' alt="" />
                 
             </div>
             <ul className=' hidden lg:flex  items-center gap-0'>
@@ -62,7 +62,7 @@ const Header = () => {
                 <div className=' flex-1 text-[15px]'>
                 <div className='flex group items-center gap-2'>
                  <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
-                 <Link to={'/home1'}><p className='cursor-pointer hover:text-red-500 duration-200' href=""> Home1</p></Link>
+                 <Link to={'/'}><p className='cursor-pointer hover:text-red-500 duration-200' href=""> Home1</p></Link>
                  </div>
                  <div className='flex group duration-200 items-center gap-2'>
                  <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>

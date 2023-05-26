@@ -60,3 +60,8 @@ background-size: auto, cover;
   background-position: 0 0, 50%;
 background-size: auto, cover;
 }
+.bgheaderpricing{
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("https://assets.website-files.com/6399ec1545e218ece386c9b6/63a1c4adedec0d30492b773b_pexels-cottonbro-studio-4101143.webp");
+background-position: 0 0, 50% 30%;
+background-size: auto, cover;
+}

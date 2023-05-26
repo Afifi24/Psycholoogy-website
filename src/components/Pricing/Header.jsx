@@ -20,7 +20,7 @@ const Header = () => {
     }
   return (
     <div>
-      <div className='bgheaderabout font-Manrope relative overflow-hidden px-4 lg:px-10 pt-4 md:min-h-screen   '>
+      <div className='bgheaderpricing font-Manrope relative overflow-hidden px-4 lg:px-10 pt-4 md:min-h-screen   '>
          <nav className='flex items-center justify-between '>
             <div className='flex items-center gap-3'>
                 <img className='w-48' src='https://assets.website-files.com/6399ec1545e218ece386c9b6/639a01dfd62c9f5f9a7057ee_Psychology-logo.svg' alt="" />
@@ -62,7 +62,7 @@ const Header = () => {
                 <div className=' flex-1 text-[15px]'>
                 <div className='flex group items-center gap-2'>
                  <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
-                 <Link to={'/'}><p className='cursor-pointer hover:text-red-500 duration-200' href=""> Home1</p></Link>
+                 <Link to={'/home1'}><p className='cursor-pointer hover:text-red-500 duration-200' href=""> Home1</p></Link>
                  </div>
                  <div className='flex group duration-200 items-center gap-2'>
                  <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
@@ -111,7 +111,7 @@ const Header = () => {
              <div className='flex  pb-10 md:pb-0  md:flex-row flex-col items-center '>
             
                <div className='flex text-center md:text-left flex-col text-white justify-center  md:gap-8'>
-               <motion.div initial={{opacity:0,y:60}} animate={{opacity:1,y:0}} transition={{delay:0.5, duration:0.5}}  className=' text-5xl md:text-6xl lg:text-7xl md:leading-[48px] leading-[68px] lg:leading-[70px] font-bold'>About Us</motion.div>
+               <motion.div initial={{opacity:0,y:60}} animate={{opacity:1,y:0}} transition={{delay:0.5, duration:0.5}}  className=' text-5xl md:text-6xl lg:text-7xl md:leading-[48px] leading-[68px] lg:leading-[70px] font-bold'>Pricing</motion.div>
                <motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1}}  className='text-lg max-w-xl'>I help people across the country and around the world create and sustain loving and resilient relationship.</motion.p>
                </div>
                

@@ -6,7 +6,6 @@ import Relationship from '../components/home1/Relationship'
 import People from '../components/home1/People'
 import Store from '../components/home1/Store'
 import Healty from '../components/home1/Healty'
-import Footer from "../components/home1/Footer";
 const Home2 = ()=>{
     return(
 
@@ -18,7 +17,6 @@ const Home2 = ()=>{
         <People/>
         <Store/>
         <Healty/>
-        <Footer/>
         </div>
     )
 }

@@ -8,6 +8,8 @@ import Contactus from './Pages/Contactus'
 import Ourteam from './Pages/Ourteam'
 import Nav from './components/Nav'
 import Menu from './components/Menu'
+import Footer from './components/home1/Footer'
+import Pricing from './Pages/Pricing'
 const App = () => {
   const [isopen,setIsopen] = useState(false)
   return (
@@ -21,7 +23,9 @@ const App = () => {
           <Route path='/sessions' element={<Sessions/>}/>
           <Route path='/contact' element={<Contactus/>}/>
           <Route path='/ourteam' element={<Ourteam/>}/>
+          <Route path='/pricing' element={<Pricing/>}/>
         </Routes>
+        <Footer/>
     </div>
   )
 }
