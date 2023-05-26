@@ -69,3 +69,21 @@ export const Location = [
             desc:'Mental health is not a goal, but a process.',
       },
 ]
+
+
+export const address = [
+      {
+            id:1,
+            city:'Paris',
+            addres: '27 Rue de Berri, Paris, France',
+            phone:'+212614350974',
+            email:'afifi71brahim@gmail.com'
+      },
+      {
+            id:2,
+            city:'London',
+            addres: '14 Tottenham Road, London, England',
+            phone:'+212614350974',
+            email:'information@office.com'
+      }
+]
