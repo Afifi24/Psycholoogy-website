@@ -4,7 +4,7 @@ import {MdOutlineClose} from 'react-icons/md'
 import {MdOutlineKeyboardArrowDown} from 'react-icons/md'
 import {easeInOut, motion} from 'framer-motion'
 import { Link } from 'react-router-dom'
-const Header = () => {
+const Header = ({theme,setTheme}) => {
 
     const [isopen,setIsopen] = useState(false)
     const [show,setShow] = useState(false)
@@ -34,13 +34,13 @@ const Header = () => {
                  <div className='flex group items-center gap-2'>
                  <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'/>
                  <Link to={'/'}>
-                 <p className='cursor-pointer hover:text-red-500 duration-200' href=""> home1</p>
+                 <p onClick={()=>setTheme('home1')} className={` ${theme === 'home1' ? 'text-red-500':''} cursor-pointer hover:text-red-500 duration-200`} href=""> home1</p>
                  </Link>
                  </div>
                  <div className='flex group duration-200 items-center gap-2'>
                  <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'/>
                  <Link to={'/home2'}>
-                 <p className='cursor-pointer hover:text-red-500 duration-200' href=""> home2</p>
+                 <p onClick={()=>setTheme('home2')} className={` ${theme === 'home2'? 'text-red-500':''} cursor-pointer hover:text-red-500 duration-200`} href=""> home2</p>
                  </Link>
                  </div>
                  <div className='w-5 h-5 bg-white absolute  -top-2 rotate-45'></div>
@@ -62,11 +62,11 @@ const Header = () => {
                 <div className=' flex-1 text-[15px]'>
                 <div className='flex group items-center gap-2'>
                  <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
-                 <Link to={'/'}><p className='cursor-pointer hover:text-red-500 duration-200' href=""> Home1</p></Link>
+                 <Link to={'/'}><p onClick={()=>setTheme('home1')} className={` ${theme === 'home1' ? 'text-red-500':''} cursor-pointer hover:text-red-500 duration-200`} href=""> Home1</p></Link>
                  </div>
                  <div className='flex group duration-200 items-center gap-2'>
                  <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
-                 <Link to={'/home2'}><p className='cursor-pointer hover:text-red-500 duration-200' href=""> Home2</p></Link>
+                 <Link to={'/home2'}><p onClick={()=>setTheme('home2')} className={` ${theme === 'home2'? 'text-red-500':''} cursor-pointer hover:text-red-500 duration-200`} href=""> Home2</p></Link>
                  </div>
                  <div className='flex group duration-200 items-center gap-2'>
                  <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>

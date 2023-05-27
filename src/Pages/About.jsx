@@ -7,10 +7,10 @@ import Client from "../components/about/Client";
 import People from '../components/about/People'
 import Healty from '../components/about/Healty'
 import Team from '../components/about/Team'
-const About = ()=>{
+const About = ({theme,setTheme})=>{
     return(
         <div className="">
-             <Header/>
+             <Header theme={theme} setTheme={setTheme}/>
              <Locationship/>
              <Hero/>
              <Family/>

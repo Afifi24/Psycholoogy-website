@@ -10,20 +10,23 @@ import Nav from './components/Nav'
 import Menu from './components/Menu'
 import Footer from './components/home1/Footer'
 import Pricing from './Pages/Pricing'
+import Teamember from './Pages/Teamember'
 const App = () => {
   const [isopen,setIsopen] = useState(false)
+  const [theme,setTheme] = useState('home1')
   return (
     <div > 
            <Nav isopen={isopen} setIsopen={setIsopen}/>
            <Menu  isopen={isopen} setIsopen={setIsopen}/>
         <Routes>
-          <Route path='/' element={<Home1/>}/>
-          <Route path='/home2' element={<Home2/>}/>
-          <Route path='/about' element={<About/>}/>
-          <Route path='/sessions' element={<Sessions/>}/>
-          <Route path='/contact' element={<Contactus/>}/>
-          <Route path='/ourteam' element={<Ourteam/>}/>
-          <Route path='/pricing' element={<Pricing/>}/>
+          <Route path='/' element={<Home1 theme={theme} setTheme={setTheme}/>}/>
+          <Route path='/home2' element={<Home2 theme={theme} setTheme={setTheme}/>}/>
+          <Route path='/about' element={<About theme={theme} setTheme={setTheme}/>}/>
+          <Route path='/sessions' element={<Sessions theme={theme} setTheme={setTheme}/>}/>
+          <Route path='/contact' element={<Contactus theme={theme} setTheme={setTheme}/>}/>
+          <Route path='/ourteam' element={<Ourteam theme={theme} setTheme={setTheme}/>}/>
+          <Route path='/pricing' element={<Pricing theme={theme} setTheme={setTheme}/>}/>
+          <Route path='/team-member' element={<Teamember theme={theme} setTheme={setTheme}/>}/>
         </Routes>
         <Footer/>
     </div>

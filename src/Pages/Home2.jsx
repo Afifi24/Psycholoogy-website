@@ -6,11 +6,11 @@ import Relationship from '../components/home1/Relationship'
 import People from '../components/home1/People'
 import Store from '../components/home1/Store'
 import Healty from '../components/home1/Healty'
-const Home2 = ()=>{
+const Home2 = ({theme,setTheme})=>{
     return(
 
         <div>
-        <Header/>
+        <Header theme={theme} setTheme={setTheme}/>
         <Hero/>
         <Client/>
         <Relationship/>
