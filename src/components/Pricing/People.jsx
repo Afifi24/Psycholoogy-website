@@ -14,12 +14,12 @@ const People = () => {
     <div className='min-h-screen overflow-hidden font-Manrope py-20'>
 
     <div className='w-[90%] space-y-4 m-auto'>
-       <motion.h1 initial={{x:'100vw'}} animate={{x:0}} transition={{delay:0.5,type:'spring'}}  className='text-center font-bold text-xl md:text-2xl lg:text-4xl'>Hear From Our People</motion.h1>
+       <motion.h1 initial={{x:'100vw'}} animate={{x:0}} transition={{delay:0.5,type:'spring'}}  className='text-center font-bold   text-4xl'>Hear From Our People</motion.h1>
        <div className='grid place-items-center'>
-       <motion.p  className=' text-md md:text-lg leading-[30px] text-center max-w-[700px] text-[#737886]'>Mental health is not a goal, but a process. It’s about how drive, not where you go. Here i come with several services to help you understand how to drive well.</motion.p>
+       <motion.p  className=' text-lg leading-[30px] text-center max-w-[700px] text-[#737886]'>Mental health is not a goal, but a process. It’s about how drive, not where you go. Here i come with several services to help you understand how to drive well.</motion.p>
        </div>
        <div className='grid place-items-center'>
-       <motion.p key={index} initial={{x:'100vw'}} animate={{x:0}} transition={{delay:0.1,type:'tween', duration:0.3}}  className=' text-md md:text-lg leading-[30px] lg:text-2xl my-8 font-bold text-center max-w-[900px] text-[#FF5142]'>{desc}</motion.p>
+       <motion.p key={index} initial={{x:'100vw'}} animate={{x:0}} transition={{delay:0.1,type:'tween', duration:0.3}}  className=' text-lg leading-[30px] lg:text-2xl my-4 lg:my-8 font-bold text-center max-w-[900px] text-[#FF5142]'>{desc}</motion.p>
        </div>
        <div className='grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8'>
              <div onClick={()=>setIndex(0)} className={` ${index === 0 ? 'shaddow':''} flex items-center flex-col lg:flex-row cursor-pointer gap-4 bg-white  py-5 px-8 rounded-xl`}>

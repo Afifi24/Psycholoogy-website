@@ -4,10 +4,10 @@ import Header from '../components/Pricing/Header'
 import People from '../components/Pricing/People'
 import Consultation from "../components/Pricing/Consultaion";
 import Price from '../components/Pricing/Price'
-const Pricing = ()=>{
+const Pricing = ({theme,setTheme})=>{
     return(
         <div>
-         <Header/>
+         <Header theme={theme} setTheme={setTheme} />
          <Price/>
          <Hero/>
          <Consultation/>

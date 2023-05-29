@@ -50,9 +50,9 @@ const Header = ({theme,setTheme}) => {
                 </li>
                
                 
-                <Link to={'/about'}><li className='text-white p-[20px] text-lg hover:text-[#FFCBC7] duration-200 cursor-pointer '>About</li></Link>
-                <Link to={'/sessions'}> <li className='text-white p-[20px] text-lg hover:text-[#FFCBC7] duration-200 cursor-pointer '>Sessions</li></Link>
-                <Link to={'/contact'}><li className='text-white p-[20px] text-lg hover:text-[#FFCBC7] duration-200 cursor-pointer '>Contact Us</li></Link>
+                <Link to={'/about'}><li onClick={()=>setTheme('about')} className={` p-[20px] text-lg hover:text-[#FFCBC7] duration-200 cursor-pointer ${theme === 'about' ? 'text-red-300':'text-white'} `}>About</li></Link>
+                <Link to={'/sessions'}> <li onClick={()=>setTheme('sessions')} className={` ${theme === 'sessions' ? 'text-red-500':''} text-white p-[20px] text-lg hover:text-[#FFCBC7] duration-200 cursor-pointer `}>Sessions</li></Link>
+                <Link to={'/contact'}><li onClick={()=>setTheme('contact')} className={`${theme === 'contact' ? 'text-red-500':''} text-white p-[20px] text-lg hover:text-[#FFCBC7] duration-200 cursor-pointer `}>Contact Us</li></Link>
                 <li onMouseEnter={()=>setPages(true)} onMouseLeave={()=>setPages(false)} className='text-white  p-[20px] z-[100]   relative text-lg '>
                   <p className=' hover:text-[#FFCBC7] cursor-pointer'>All pages</p>
                   {
@@ -70,30 +70,30 @@ const Header = ({theme,setTheme}) => {
                  </div>
                  <div className='flex group duration-200 items-center gap-2'>
                  <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
-                 <Link to={'/about'}><p className='cursor-pointer hover:text-red-500 duration-200' href="">About Us</p></Link>
+                 <Link to={'/about'}><p onClick={()=>setTheme('about')} className={`cursor-pointer hover:text-red-500 duration-200 ${theme === 'about'? 'text-red-300':''}`} href="">About Us</p></Link>
                  </div>
                  <div className='flex group duration-200 items-center gap-2'>
                  <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
-                <Link to={'/ourteam'}> <p className='cursor-pointer hover:text-red-500 duration-200' href="">Our Team</p></Link>
+                <Link to={'/ourteam'}> <p onClick={()=>setTheme('team')} className={`cursor-pointer hover:text-red-500 duration-200 ${theme === 'team'? 'text-red-300':''} `} href="">Our Team</p></Link>
                  </div>
                  
                 </div>
                   <div className=' flex-1 text-[15px]'>
                   <div className='flex group duration-200 items-center gap-2'>
                  <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
-                 <Link to={'/team-member'}><p className='cursor-pointer hover:text-red-500 duration-200' href="">Team Member</p></Link>
+                 <Link to={'/team-member'}><p onClick={()=>setTheme('teammember')} className={`${theme === 'teammember'? 'text-red-300':''} cursor-pointer hover:text-red-500 duration-200`} href="">Team Member</p></Link>
                  </div>
                  <div className='flex group duration-200 items-center gap-2'>
                  <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
-                 <Link to={'/sessions'}><p className='cursor-pointer hover:text-red-500 duration-200' href="">Sessions </p></Link>
+                 <Link to={'/sessions'}><p onClick={()=>setTheme('sessions')} className={`cursor-pointer hover:text-red-500 duration-200 ${theme === 'sessions'? 'text-red-300':''} `} href="">Sessions </p></Link>
                  </div>
                  <div className='flex group duration-200 items-center gap-2'>
                  <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
-                 <Link to={'/pricing'}><p className='cursor-pointer hover:text-red-500 duration-200' href="">Pricing </p></Link>
+                 <Link to={'/pricing'}><p onClick={()=>setTheme('pricing')} className={`cursor-pointer hover:text-red-500 duration-200 ${theme === 'pricing'? 'text-red-300':''} `} href="">Pricing </p></Link>
                  </div>
                  <div className='flex group duration-200 items-center gap-2'>
                  <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
-                 <Link to={'/contact'}><p className='cursor-pointer hover:text-red-500 duration-200' href="">Contact </p></Link>
+                 <Link to={'/contact'}><p onClick={()=>setTheme('contact')} className={`cursor-pointer hover:text-red-500 duration-200 ${theme === 'contact'? 'text-red-300':''} `} href="">Contact </p></Link>
                  </div>
                   </div>
                  <div className='w-5 h-5 bg-white absolute  -top-2 rotate-45'></div>

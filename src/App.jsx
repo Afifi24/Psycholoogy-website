@@ -17,7 +17,7 @@ const App = () => {
   return (
     <div > 
            <Nav isopen={isopen} setIsopen={setIsopen}/>
-           <Menu  isopen={isopen} setIsopen={setIsopen}/>
+           <Menu theme={theme}  isopen={isopen} setIsopen={setIsopen} setTheme={setTheme}/>
         <Routes>
           <Route path='/' element={<Home1 theme={theme} setTheme={setTheme}/>}/>
           <Route path='/home2' element={<Home2 theme={theme} setTheme={setTheme}/>}/>

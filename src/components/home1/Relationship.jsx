@@ -6,13 +6,13 @@ const Relationship = () => {
   return (
     <div className='min-h-screen bg-[#FFFAF7] font-Manrope py-20 mt-64  lg:mt-16'>
      <div className='w-[90%] m-auto'>
-     <div className='flex flex-col lg:flex-row  items-center gap-32'>
+     <div className='flex flex-col lg:flex-row  items-center gap-10 lg:gap-32'>
           <div className='flex flex-1 flex-col gap-4'>
             <h1 className='text-red-500 uppercase'>how can i help you </h1>
             <p className='text-[#737886] text-lg'>Mental health is not a goal, but a process. It’s about how drive, not where you go. Here i come with several services to help you understand how to drive well.</p>
             <button className=' w-fit  rounded-full mt-10 z-50 hover:text-[#FF5142] bg-[#FF5142]   text-white duration-200 border border-[#FF5142] hover:bg-transparent text-lg py-4 px-8'>Book a consultation</button>
           </div>
-          <div className='bg-white  flex gap-7 flex-col py-8 px-12 shaddow flex-1 rounded-xl'>
+          <div className='bg-white w-full  flex gap-7 flex-col px-6  py-8 lg:px-12 shaddow flex-1 rounded-xl'>
             <h1 className='text-2xl lg:text-4xl hover:text-[#FF5142] cursor-pointer duration-200 font-bold'>Stress Management </h1>
             <h1 className='text-2xl lg:text-4xl hover:text-[#FF5142] cursor-pointer duration-200 font-bold'>Dating & Relationships </h1>
             <h1 className='text-2xl lg:text-4xl hover:text-[#FF5142] cursor-pointer duration-200 font-bold'>Self-Esteem Issues</h1>

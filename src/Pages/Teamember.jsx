@@ -1,10 +1,10 @@
 import React from "react";
 import Header from '../components/teammember/Header'
 import About from '../components/teammember/About'
-const Teammember = ()=>{
+const Teammember = ({theme,setTheme})=>{
     return(
         <div>
-        <Header/>
+        <Header theme={theme} setTheme={setTheme}/>
         <About/>
 
         </div>

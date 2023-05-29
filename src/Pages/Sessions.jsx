@@ -3,10 +3,10 @@ import Header from '../components/sessions/Header'
 import Family from '../components/sessions/Family'
 import Client from '../components/sessions/Client'
 import Consultation from '../components/sessions/Consultaion'
-const Sessions = ()=> {
+const Sessions = ({theme,setTheme})=> {
     return(
         <div>
-         <Header/>
+         <Header theme={theme} setTheme={setTheme}/>
          <Family/>
          <Consultation/>
          <Client/>

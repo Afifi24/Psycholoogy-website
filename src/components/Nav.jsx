@@ -31,7 +31,7 @@ const Nav = ({isopen, setIsopen})=> {
                      </div>
 
                      <div className='mt-10 flex flex-col'>
-                            <div onMouseEnter={Showhide} onMouseLeave={Showhide} className='flex  flex-col gap-3'>
+                            <div onClick={Showhide} className='flex  flex-col gap-3'>
                                 <div href='' className=' flex p-[10px] justify-between items-center cursor-pointer'  >
                                   
                                 <p>  Demos</p>
@@ -78,15 +78,19 @@ const Nav = ({isopen, setIsopen})=> {
                  </div>
                  <div className='flex group duration-200 items-center gap-2'>
                  <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
-                  <Link to={'/team'}><p className='cursor-pointer hover:text-red-500 duration-200' href="">Our Team</p></Link>
+                  <Link to={'/ourteam'}><p className='cursor-pointer hover:text-red-500 duration-200' href="">Our Team</p></Link>
                  </div>
                  <div className='flex group duration-200 items-center gap-2'>
                  <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
-                 <Link to={'/teammember'}><p className='cursor-pointer hover:text-red-500 duration-200' href="">Team Member</p></Link>
+                 <Link to={'/team-member'}><p className='cursor-pointer hover:text-red-500 duration-200' href="">Team Member</p></Link>
                  </div>
                  <div className='flex group duration-200 items-center gap-2'>
                  <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
                    <Link to={'/sessions'}><p className='cursor-pointer hover:text-red-500 duration-200' href="">Sessions </p></Link>
+                 </div>
+                 <div className='flex group duration-200 items-center gap-2'>
+                 <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
+                   <Link to={'/pricing'}><p className='cursor-pointer hover:text-red-500 duration-200' href="">Pricing </p></Link>
                  </div>
                   <div className='flex group duration-200 items-center gap-2'>
                  <p className='w-0 duration-200 group-hover:w-5  rounded-full h-[2px] bg-red-500'></p>
