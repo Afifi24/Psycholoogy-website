@@ -65,3 +65,7 @@ background-size: auto, cover;
 background-position: 0 0, 50% 30%;
 background-size: auto, cover;
 }
+
+.shadddow{
+  box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+}

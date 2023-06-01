@@ -11,6 +11,7 @@ import Menu from './components/Menu'
 import Footer from './components/home1/Footer'
 import Pricing from './Pages/Pricing'
 import Teamember from './Pages/Teamember'
+import Scrolltop from './components/Scrooltop'
 const App = () => {
   const [isopen,setIsopen] = useState(false)
   const [theme,setTheme] = useState('home1')
@@ -18,6 +19,8 @@ const App = () => {
     <div > 
            <Nav isopen={isopen} setIsopen={setIsopen}/>
            <Menu theme={theme}  isopen={isopen} setIsopen={setIsopen} setTheme={setTheme}/>
+           <Scrolltop/>
+
         <Routes>
           <Route path='/' element={<Home1 theme={theme} setTheme={setTheme}/>}/>
           <Route path='/home2' element={<Home2 theme={theme} setTheme={setTheme}/>}/>

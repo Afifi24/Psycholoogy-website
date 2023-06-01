@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import { people } from '../../Data'
 import designe from '../../assets/images/avatar3.jpg'
-
+import {textView} from '../../Animation'
 import ceo from '../../assets/images/avatar4.jpg'
 import real from '../../assets/images/avatar5.jpg'
 import {motion,useViewportScroll} from 'framer-motion'
-import { AiOutlineNodeIndex } from 'react-icons/ai'
 const People = () => {
   const [index,setIndex] = useState(1)
   const {desc} = people[index]
@@ -14,7 +13,7 @@ const People = () => {
     <div className='min-h-screen overflow-hidden font-Manrope py-20'>
 
     <div className='w-[90%] space-y-4 m-auto'>
-       <motion.h1 initial={{x:'100vw'}} animate={{x:0}} transition={{delay:0.5,type:'spring'}}  className='text-center font-bold   text-4xl'>Hear From Our People</motion.h1>
+       <motion.h1 variants={textView} initial='hidden' whileInView='show' className='text-center font-bold   text-4xl'>Hear From Our People</motion.h1>
        <div className='grid place-items-center'>
        <motion.p  className=' text-lg leading-[30px] text-center max-w-[700px] text-[#737886]'>Mental health is not a goal, but a process. It’s about how drive, not where you go. Here i come with several services to help you understand how to drive well.</motion.p>
        </div>

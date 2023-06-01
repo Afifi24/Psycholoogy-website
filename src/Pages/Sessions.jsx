@@ -5,7 +5,7 @@ import Client from '../components/sessions/Client'
 import Consultation from '../components/sessions/Consultaion'
 const Sessions = ({theme,setTheme})=> {
     return(
-        <div>
+        <div className="overflow-hidden">
          <Header theme={theme} setTheme={setTheme}/>
          <Family/>
          <Consultation/>

@@ -9,7 +9,7 @@ import Healty from '../components/home1/Healty'
 const Home2 = ({theme,setTheme})=>{
     return(
 
-        <div>
+        <div className="overflow-hidden">
         <Header theme={theme} setTheme={setTheme}/>
         <Hero/>
         <Client/>

@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-// import Swiper from "./Swiper";
-import { Swiper, SwiperSlide } from 'swiper/react';
 import {MdOutlineKeyboardArrowRight} from 'react-icons/md'
 import {AiOutlineMail} from 'react-icons/ai'
 import {BsFillTelephoneFill} from 'react-icons/bs'

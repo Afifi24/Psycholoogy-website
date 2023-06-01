@@ -1,5 +1,7 @@
 import React from "react";
 import {price} from '../../Data'
+import {motion} from 'framer-motion'
+import {pricee} from '../../Animation'
 const Price = ()=>{
     return(
         <div className="font-Manrope mt-20">
@@ -10,7 +12,7 @@ const Price = ()=>{
             </div>
             <div className="grid mt-20 min-h-[70vh] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                  {price.map(item=>(
-                  <div key={item.id} className="flex flex-col  gap-6  items-center p-10 rounded-xl bg-white shaddow">
+                  <motion.div variants={pricee} initial='hidden' whileInView={'show'} key={item.id} className="flex flex-col  gap-6  items-center p-10 rounded-xl bg-white shaddow">
                   <h1 className="font-bold text-center text-4xl">{item.title}</h1>
                   <p className="text-lg text-center text-[#737886]">{item.desc}</p>
                   <h1 className="text-6xl font-bold">${item.price} <span className="text-sm">/1 hour</span></h1>
@@ -18,7 +20,7 @@ const Price = ()=>{
                   <p className="text-lg text-center text-[#737886]">{item.conf}</p>
                   <p className="text-lg text-center text-[#737886]">{item.licence}</p>
                   <p className="text-lg text-center text-[#737886]">{item.shedule}</p>
-             </div>
+             </motion.div>
                  ))}
             </div>
           </div>

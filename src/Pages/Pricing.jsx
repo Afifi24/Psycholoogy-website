@@ -6,7 +6,7 @@ import Consultation from "../components/Pricing/Consultaion";
 import Price from '../components/Pricing/Price'
 const Pricing = ({theme,setTheme})=>{
     return(
-        <div>
+        <div className="overflow-hidden">
          <Header theme={theme} setTheme={setTheme} />
          <Price/>
          <Hero/>

@@ -111,7 +111,7 @@ const Header = ({theme,setTheme}) => {
          
          <header className=' mt-4    lg:mt-4'>
              <div className='flex relative  h-[50vh] md:h-[60vh] md:w-full justify-center  lg:flex-row items-center '>
-               <h1 className='text-7xl font-bold text-center'>Theresa Webb</h1>
+               <motion.h1 initial={{y:100,opacity:0}} animate={{y:0,opacity:1, transition:{duration:1}}} className='text-7xl font-bold text-center'>Theresa Webb</motion.h1>
                 <img className='absolute right-0 top-1/4 w-2/3 ' src="https://assets.website-files.com/6399ec1545e218ece386c9b6/63a0d3b0f7c615594680ada2_Vector%2022g.svg" alt="" />
              </div>
          </header>

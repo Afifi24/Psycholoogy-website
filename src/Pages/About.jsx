@@ -9,7 +9,7 @@ import Healty from '../components/about/Healty'
 import Team from '../components/about/Team'
 const About = ({theme,setTheme})=>{
     return(
-        <div className="">
+        <div className="overflow-hidden">
              <Header theme={theme} setTheme={setTheme}/>
              <Locationship/>
              <Hero/>
