@@ -11,7 +11,7 @@ const Family = ()=>{
                  <p className="text-[#737886] text-lg">Mental health is not a goal, but a process. It’s about how drive, not where you go. Here i come with several services to help you understand how to drive well.</p>
                  <button className=' mt-10 w-fit  rounded-full  z-50 hover:text-white   duration-200 border border-[#FF5142] hover:bg-[#FF5142] text-md  md:text-lg py-4 px-5  md:px-8'>Learn More</button>
             </div>
-              <motion.div variants={fade} initial='hidden' whileInView={'show'} className="order-1 md:order-2">
+              <motion.div variants={fade} initial='hidden' whileInView={'show'} viewport={{once:true}} className="order-1 md:order-2">
               <img className="rounded-xl" src="https://assets.website-files.com/6399ec1645e218589086c9c0/63a22c9c41bfdb7073358007_pexels-ketut-subiyanto-4308057.jpg" alt="" sizes="(max-width: 479px) 100vw, (max-width: 767px) 86vw, (max-width: 991px) 89vw, (max-width: 1279px) 43vw, 514.09375px" />
               </motion.div>
            </div>

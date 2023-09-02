@@ -20,10 +20,10 @@ const Relationship = () => {
           </div>
      </div>
      <div className='flex  flex-col md:flex-row items-center mt-10 gap-10 '>
-             <motion.div initial={{scale:0.9}}  whileInView={{scale:1}} transition={{duration:1}}  className='flex-1 rounded-xl overflow-hidden'>
+             <motion.div initial={{scale:0.9}}  whileInView={{scale:1}} viewport={{once:true}} transition={{duration:1}}  className='flex-1 rounded-xl overflow-hidden'>
                <img src='https://assets.website-files.com/6399ec1545e218ece386c9b6/639b3b10397f071f66561332_anthony-tran-i-ePv9Dxg7U-unsplash%204.webp' alt="" />
              </motion.div>
-             <motion.div initial={{scale:0.9}} whileInView={{scale:1}} transition={{duration:1}} className='flex-1 rounded-xl overflow-hidden'>
+             <motion.div initial={{scale:0.9}} whileInView={{scale:1}} viewport={{once:true}}  transition={{duration:1}} className='flex-1 rounded-xl overflow-hidden'>
                <img src='https://assets.website-files.com/6399ec1545e218ece386c9b6/639b3b0dc93a8949dd8d45a9_anthony-tran-i-ePv9Dxg7U-unsplash%203.webp' alt="" />
              </motion.div>
      </div>

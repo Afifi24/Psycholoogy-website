@@ -42,11 +42,11 @@ const About = ()=>{
                  </div>
 
                  <div className="flex  flex-col lg:flex-row mt-28 items-center gap-10">
-                      <motion.div variants={fade} initial='hidden' whileInView={'show'} className="flex-1 "> 
+                      <motion.div variants={fade} initial='hidden' whileInView={'show'} viewport={{once:true}} className="flex-1 "> 
                         <img className=" rounded-xl object-cover " src="https://assets.website-files.com/6399ec1645e218589086c9c0/63a0c709c43de80a3a8e0be7_pexels-yan-krukov-8837166.jpg" alt="" />
                       
                       </motion.div>
-                     <motion.div variants={fade} initial='hidden' whileInView={'show'} className="flex-1  ">
+                     <motion.div variants={fade} initial='hidden' whileInView={'show'} viewport={{once:true}} className="flex-1  ">
                       <img className=" rounded-xl object-cover " src="https://assets.website-files.com/6399ec1545e218ece386c9b6/63a1e45ab4ace124e6c03eae_pexels-pavel-danilyuk-6712704.webp" alt="" />
                       
                       </motion.div>

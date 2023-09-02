@@ -13,7 +13,7 @@ const People = () => {
     <div className='min-h-screen overflow-hidden font-Manrope py-20'>
 
     <div className='w-[90%] space-y-4 m-auto'>
-       <motion.h1 variants={textView} initial='hidden' whileInView='show' className='text-center font-bold   text-4xl'>Hear From Our People</motion.h1>
+       <motion.h1 variants={textView} initial='hidden' whileInView='show' viewport={{once:true}} className='text-center font-bold   text-4xl'>Hear From Our People</motion.h1>
        <div className='grid place-items-center'>
        <motion.p  className=' text-lg leading-[30px] text-center max-w-[700px] text-[#737886]'>Mental health is not a goal, but a process. It’s about how drive, not where you go. Here i come with several services to help you understand how to drive well.</motion.p>
        </div>

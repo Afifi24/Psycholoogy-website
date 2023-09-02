@@ -11,12 +11,12 @@ const Family = ()=>{
                  <p className="text-[#737886] text-lg">Mental health is not a goal, but a process. It’s about how drive, not where you go. Here i come with several services to help you understand how to drive well.</p>
                  <button className=' mt-10 w-fit  rounded-full  z-50 hover:text-white   duration-200 border border-[#FF5142] hover:bg-[#FF5142] text-md  md:text-lg py-4 px-5  md:px-8'>Learn More</button>
             </div>
-              <motion.div variants={fade}  initial='hidden' whileInView={'show'} className="order-1 flex-1 md:order-2">
+              <motion.div variants={fade}  initial='hidden' whileInView={'show'} viewport={{once:true}} className="order-1 flex-1 md:order-2">
               <img className="rounded-xl" src="https://assets.website-files.com/6399ec1545e218ece386c9b6/63a1e45ab4ace124e6c03eae_pexels-pavel-danilyuk-6712704.webp" alt="" sizes="(max-width: 479px) 100vw, (max-width: 767px) 86vw, (max-width: 991px) 89vw, (max-width: 1279px) 43vw, 514.09375px" />
               </motion.div>
               
            </div>
-           <motion.div variants={translateslide} initial='hidden' whileInView={'show'} className="flex h-full flex-col md:flex-row  gap-10    ">
+           <motion.div variants={translateslide} initial='hidden' whileInView={'show'} viewport={{once:true}} className="flex h-full flex-col md:flex-row  gap-10    ">
             <div className="flex order-2 w-full flex-1  bg-white rounded-xl shaddow p-7 lg:p-10 md:order-1 flex-col gap-4 lg:gap-4">
                  <h1 className="text-4xl  hover:text-[#ff5142] duration-200 font-bold">Our Pricing</h1>
                  <p className="text-[#737886] text-lg">Mental health is not a goal, but a process. It’s about how drive, not where you go. Here i come with several services to help you understand how to drive well.</p>
